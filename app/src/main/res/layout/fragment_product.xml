@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.feature.main.view.fragment.ProductFragment">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen200"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/productBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen16"
+        android:layout_marginTop="@dimen/dimen16"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen0"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen10">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:gravity="center"
+                android:text="@string/score_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productEcoScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp16" />
+
+
+            <TextView
+                android:id="@+id/productNutriScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp16" />
+
+            <TextView
+                android:id="@+id/productScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:gravity="center"
+                android:text="@string/brand"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:gravity="center"
+                android:text="@string/labels"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productLabels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen10"
+                android:gravity="center"
+                android:text="@string/ingredients"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/productIngredientsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen6"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimenSp16" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

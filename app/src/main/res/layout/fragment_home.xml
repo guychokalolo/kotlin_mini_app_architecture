@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.feature.main.view.fragment.HomeFragment">
+
+    <TextView
+        android:id="@+id/homeScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen50"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen30"
+        app:layout_constraintBaseline_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="@dimen/dimen200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen260"
+        android:background="@drawable/custom_button"
+        android:text="@string/Scan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="@dimen/dimen200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen16"
+        android:background="@drawable/custom_button"
+        android:text="@string/History"
+        app:layout_constraintEnd_toEndOf="@+id/btnScan"
+        app:layout_constraintStart_toStartOf="@+id/btnScan"
+        app:layout_constraintTop_toBottomOf="@+id/btnScan" />
+</androidx.constraintlayout.widget.ConstraintLayout>

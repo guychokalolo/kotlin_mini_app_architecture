@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Project David Silvera</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Scan">scan</string>
+    <string name="History">History</string>
+    <string name="score">Score : %s</string>
+    <string name="score_label">Score</string>
+    <string name="brand">Brand</string>
+    <string name="labels">Labels</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="ecoscore">Eco Score : %s</string>
+    <string name="nutriscore">Nutriscore : %s</string>
+    <string name="product_score">Product socre : %s</string>
+</resources>
